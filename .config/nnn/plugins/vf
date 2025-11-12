@@ -1,0 +1,4 @@
+#!/bin/bash
+# Video filter plugin for nnn
+printf '+l' > "$NNN_PIPE"
+video-tracker ifilt | tr \\n \\0 > "$NNN_PIPE"
